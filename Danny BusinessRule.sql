@@ -55,7 +55,7 @@ CHECK (dbo.checklength() = 0)
 GO
 
 -- count how many department that was in all those companies who is under 'Software Engineering
-CREATE OR ALTER FUNCTION num_exp(@PK INT)
+CREATE OR ALTER FUNCTION num_dep()
 RETURNS INT
 AS
 BEGIN
@@ -72,7 +72,7 @@ END
 GO
 
 ALTER TABLE tblCOMPANY
-ADD num_experience AS num_exp(CompanyID)
+ADD num_departind AS num_dep()
 GO
 
 -- Calculate the number of an industry's job_posting which has a postedDate less than 365 days ago
