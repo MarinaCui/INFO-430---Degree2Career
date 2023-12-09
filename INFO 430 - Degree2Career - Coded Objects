@@ -916,7 +916,7 @@ GROUP BY C.CompanyID, C.CompanyName
 ORDER BY NumDepartmentsInSoftwareEngineering DESC
 GO
 
--- Top 10 applied Job Postings in the “Data” Industry that were posted less than a year ago
+-- Top 10 applied Job Postings in the Â“DataÂ” Industry that were posted less than a year ago
 CREATE OR ALTER VIEW vw_TopJobPostingsDataIndus365
 AS
 SELECT TOP 10 JP.JobPostingID, P.PositionName, C.CompanyName, I.IndustryName, JP.PostedDate
@@ -1062,7 +1062,7 @@ GO
 
 -- Danny
 
--- Number of Departments for companies who are in the 'Software Engineering’ Industry
+-- Number of Departments for companies who are in the 'Software EngineeringÂ’ Industry
 CREATE OR ALTER FUNCTION fn_numDepartmentsSoftware(@PK_ID INT)
 RETURNS INT
 AS
